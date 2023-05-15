@@ -70,6 +70,38 @@
             text-align: center;
         }
 
+        #form_3 {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        #form_4 {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        #form_5 {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        #form_6 {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
         input {
             width: 90%;
             outline: none;
@@ -94,19 +126,71 @@
         <button id="next">Далее</button>
 
     </div>
+
     <form id="form_2">
         <img src="media/2.png"/>
         <button id="next_2">Далее</button>
     </form>
+
+    <form id="form_3">
+        <img src="media/3.png"/>
+        <button id="next_3">Далее</button>
+    </form>
+
+    <form id="form_4">
+        <img src="media/4.png"/>
+        <button id="next_4">Далее</button>
+    </form>
+
+    <form id="form_5">
+        <img src="media/5.png"/>
+        <button id="next_5">Далее</button>
+    </form>
+
+    <form id="form_6">
+        <img src="media/6.png"/>
+        <button id="next_6">Далее</button>
+    </form>
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let next = document.getElementById("next");
+        let next_2 = document.getElementById("next_2");
+        let next_3 = document.getElementById("next_3");
+        let next_4 = document.getElementById("next_4");
+        let next_5 = document.getElementById("next_5");
+        let next_6 = document.getElementById("next_6");
         tg.expand();
 
         next.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
             document.getElementById("form_2").style.display = "block";
+        });
+
+        next_2.addEventListener("click", () => {
+            document.getElementById("form_2").style.display = "none";
+            document.getElementById("form_3").style.display = "block";
+        });
+
+        next_3.addEventListener("click", () => {
+            document.getElementById("form_3").style.display = "none";
+            document.getElementById("form_4").style.display = "block";
+        });
+
+        next_4.addEventListener("click", () => {
+            document.getElementById("form_4").style.display = "none";
+            document.getElementById("form_5").style.display = "block";
+        });
+
+        next_5.addEventListener("click", () => {
+            document.getElementById("form_5").style.display = "none";
+            document.getElementById("form_6").style.display = "block";
+        });
+
+        next_6.addEventListener("click", () => {
+            document.getElementById("form_6").style.display = "none";
+            document.getElementById("main").style.display = "block";
         });
 
     </script>
