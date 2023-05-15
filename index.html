@@ -220,71 +220,85 @@
     <form id="form_2">
         <img src="media/2.png"/>
         <button id="next_2">Далее</button>
+        <button id="back_2">Назад</button>
     </form>
 
     <form id="form_3">
         <img src="media/3.png"/>
         <button id="next_3">Далее</button>
+        <button id="back_3">Назад</button>
     </form>
 
     <form id="form_4">
         <img src="media/4.png"/>
         <button id="next_4">Далее</button>
+        <button id="back_4">Назад</button>
     </form>
 
     <form id="form_5">
         <img src="media/5.png"/>
         <button id="next_5">Далее</button>
+        <button id="back_5">Назад</button>
     </form>
 
     <form id="form_6">
         <img src="media/6.png"/>
         <button id="next_6">Далее</button>
+        <button id="back_6">Назад</button>
     </form>
 
     <form id="form_7">
         <img src="media/7.png"/>
         <button id="next_7">Далее</button>
+        <button id="back_7">Назад</button>
     </form>
 
     <form id="form_8">
         <img src="media/8.png"/>
         <button id="next_8">Далее</button>
+        <button id="back_8">Назад</button>
     </form>
 
     <form id="form_9">
         <img src="media/9.png"/>
         <button id="next_9">Далее</button>
+        <button id="back_9">Назад</button>
     </form>
 
     <form id="form_10">
         <img src="media/10.png"/>
         <button id="next_10">Далее</button>
+        <button id="back_10">Назад</button>
     </form>
 
     <form id="form_11">
         <img src="media/11.png"/>
         <button id="next_11">Далее</button>
+        <button id="back_11">Назад</button>
     </form>
 
     <form id="form_12">
         <img src="media/12.png"/>
         <button id="next_12">Далее</button>
+        <button id="back_12">Назад</button>
     </form>
 
     <form id="form_13">
         <img src="media/13.png"/>
         <button id="next_13">Далее</button>
+        <button id="back_13">Назад</button>
     </form>
 
     <form id="form_14">
         <img src="media/14.png"/>
         <button id="next_14">Далее</button>
+        <button id="back_14">Назад</button>
     </form>
 
     <form id="form_15">
         <img src="media/15.png"/>
         <button id="next_15">Далее</button>
+        <button id="back_15">Назад</button>
     </form>
 
     <form id="form_16">
@@ -329,6 +343,21 @@
         let next_16 = document.getElementById("next_16");
 
         let next_new = document.getElementById("next_new");
+
+        let back_2 = document.getElementById("back_2");
+        let back_3 = document.getElementById("back_3");
+        let back_4 = document.getElementById("back_4");
+        let back_5 = document.getElementById("back_5");
+        let back_6 = document.getElementById("back_6");
+        let back_7 = document.getElementById("back_7");
+        let back_8 = document.getElementById("back_8");
+        let back_9 = document.getElementById("back_9");
+        let back_10 = document.getElementById("back_10");
+        let back_11 = document.getElementById("back_11");
+        let back_12 = document.getElementById("back_12");
+        let back_13 = document.getElementById("back_13");
+        let back_14 = document.getElementById("back_14");
+        let back_15 = document.getElementById("back_15");
 
         tg.expand();
 
@@ -409,6 +438,7 @@
 
         next_16.addEventListener("click", () => {
             document.getElementById("form_16").style.display = "none";
+            document.getElementById("new_form").style.display = "none";
             document.getElementById("main").style.display = "block";
         });
 
@@ -417,7 +447,76 @@
             document.getElementById("new_form").style.display = "block";
         });
 
+        back_2.addEventListener("click", () => {
+            document.getElementById("form_2").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        });
 
+        back_3.addEventListener("click", () => {
+            document.getElementById("form_3").style.display = "none";
+            document.getElementById("form_2").style.display = "block";
+        });
+
+        back_4.addEventListener("click", () => {
+            document.getElementById("form_4").style.display = "none";
+            document.getElementById("form_3").style.display = "block";
+        });
+
+        back_5.addEventListener("click", () => {
+            document.getElementById("form_5").style.display = "none";
+            document.getElementById("form_4").style.display = "block";
+        });
+
+        back_6.addEventListener("click", () => {
+            document.getElementById("form_6").style.display = "none";
+            document.getElementById("form_5").style.display = "block";
+        });
+
+        back_7.addEventListener("click", () => {
+            document.getElementById("form_7").style.display = "none";
+            document.getElementById("form_6").style.display = "block";
+        });
+
+        back_8.addEventListener("click", () => {
+            document.getElementById("form_8").style.display = "none";
+            document.getElementById("form_7").style.display = "block";
+        });
+
+        back_9.addEventListener("click", () => {
+            document.getElementById("form_9").style.display = "none";
+            document.getElementById("form_8").style.display = "block";
+        });
+
+        back_10.addEventListener("click", () => {
+            document.getElementById("form_10").style.display = "none";
+            document.getElementById("form_9").style.display = "block";
+        });
+
+        back_11.addEventListener("click", () => {
+            document.getElementById("form_11").style.display = "none";
+            document.getElementById("form_10").style.display = "block";
+        });
+
+        back_12.addEventListener("click", () => {
+            document.getElementById("form_12").style.display = "none";
+            document.getElementById("form_11").style.display = "block";
+        });
+
+        back_13.addEventListener("click", () => {
+            document.getElementById("form_13").style.display = "none";
+            document.getElementById("form_12").style.display = "block";
+        });
+
+        back_14.addEventListener("click", () => {
+            document.getElementById("form_14").style.display = "none";
+            document.getElementById("form_13").style.display = "block";
+        });
+
+        back_15.addEventListener("click", () => {
+            document.getElementById("form_15").style.display = "none";
+            document.getElementById("form_14").style.display = "block";
+        });
+        
     </script>
 </body>
 </html>
