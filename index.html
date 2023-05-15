@@ -99,14 +99,13 @@
     <script>
         let tg = window.Telegram.WebApp;
         let next = document.getElementById("next");
+        tg.expand();
+
         next.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
             document.getElementById("form_2").style.display = "block";
         });
 
-
-    </script>
-        tg.expand();
     </script>
 </body>
 </html>
