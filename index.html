@@ -212,6 +212,36 @@
         <button id="next_2">Далее</button>
     </form>
 
+    <form id="form_3">
+        <img src="media/3.png"/>
+        <button id="next_3">Далее</button>
+    </form>
+
+    <form id="form_4">
+        <img src="media/4.png"/>
+        <button id="next_4">Далее</button>
+    </form>
+
+    <form id="form_5">
+        <img src="media/5.png"/>
+        <button id="next_5">Далее</button>
+    </form>
+
+    <form id="form_6">
+        <img src="media/6.png"/>
+        <button id="next_6">Далее</button>
+    </form>
+
+    <form id="form_7">
+        <img src="media/7.png"/>
+        <button id="next_7">Далее</button>
+    </form>
+
+    <form id="form_8">
+        <img src="media/8.png"/>
+        <button id="next_8">Далее</button>
+    </form>
+
 
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -220,6 +250,13 @@
 
         let next = document.getElementById("next");
         let next_2 = document.getElementById("next_2");
+        let next_3 = document.getElementById("next_3");
+        let next_4 = document.getElementById("next_4");
+
+        let next_5 = document.getElementById("next_5");
+        let next_6 = document.getElementById("next_6");
+        let next_7 = document.getElementById("next_7");
+        let next_8 = document.getElementById("next_8");
 
 
         tg.expand();
@@ -231,9 +268,38 @@
 
         next_2.addEventListener("click", () => {
             document.getElementById("form_2").style.display = "none";
-            document.getElementById("main").style.display = "block";
+            document.getElementById("form_3").style.display = "block";
         });
 
+        next_3.addEventListener("click", () => {
+            document.getElementById("form_3").style.display = "none";
+            document.getElementById("form_4").style.display = "block";
+        });
+
+        next_4.addEventListener("click", () => {
+            document.getElementById("form_4").style.display = "none";
+            document.getElementById("form_5").style.display = "block";
+        });
+
+        next_5.addEventListener("click", () => {
+            document.getElementById("form_5").style.display = "none";
+            document.getElementById("form_6").style.display = "block";
+        });
+
+        next_6.addEventListener("click", () => {
+            document.getElementById("form_6").style.display = "none";
+            document.getElementById("form_7").style.display = "block";
+        });
+
+        next_7.addEventListener("click", () => {
+            document.getElementById("form_7").style.display = "none";
+            document.getElementById("form_8").style.display = "block";
+        });
+
+        next_8.addEventListener("click", () => {
+            document.getElementById("form_8").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        });
 
 
     </script>
