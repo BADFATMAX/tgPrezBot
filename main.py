@@ -7,7 +7,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Ознакомиться с информацией', web_app=WebAppInfo('index.html')))
+    markup.add(types.KeyboardButton('Ознакомиться с информацией', web_app=WebAppInfo(url='https://badfatmax.github.io/tgPrezBot/')))
     await message.answer('Успешное подключение!', reply_markup=markup)
 
 executor.start_polling(dp)
