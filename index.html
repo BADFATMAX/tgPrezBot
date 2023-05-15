@@ -184,6 +184,14 @@
             text-align: center;
         }
 
+        #new_form {
+            display: none;
+            width: 100%;
+            padding: 20px;
+            margin-top: 150px;
+            text-align: center;
+        }
+
         input {
             width: 90%;
             outline: none;
@@ -281,12 +289,21 @@
 
     <form id="form_16">
         <img src="media/16.png"/>
+        <button id="next_new">Связь со специалистом</button>
+        <button id="next_16">Назад в начало</button>
+    </form>
+
+    <form id="new_form">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Телефон" id="user_phone">
+        <p>Ожидайте, наш специалист скоро свяжется с вами.</p>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Flogowik.com%2Fcall-center-vector-icon-14831.html&psig=AOvVaw0LCwA9NATQ9e8pQNBhCZu5&ust=1684259152584000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOC46Lbw9_4CFQAAAAAdAAAAABAE" alt="">
         <button id="next_16">Назад в начало</button>
     </form>
 
 
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>1
     <script>
         let tg = window.Telegram.WebApp;
 
@@ -309,6 +326,8 @@
         let next_14 = document.getElementById("next_14");
         let next_15 = document.getElementById("next_15");
         let next_16 = document.getElementById("next_16");
+
+        let next_new = document.getElementById("next_new");
 
 
         tg.expand();
@@ -391,6 +410,11 @@
         next_16.addEventListener("click", () => {
             document.getElementById("form_16").style.display = "none";
             document.getElementById("main").style.display = "block";
+        });
+
+        next_new.addEventListener("click", () => {
+            document.getElementById("form_16").style.display = "none";
+            document.getElementById("new_form").style.display = "block";
         });
 
 
